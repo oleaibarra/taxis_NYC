@@ -1,0 +1,129 @@
+Proyecto NYC Taxis
+
+I. CONTEXTO
+
+Una empresa está interesada en invertir en el sector de transporte de pasajeros con automóviles*. 
+
+Quieren corroborar (con una visión de un futuro menos contaminado) la relación entre dicho medio de transporte y
+la calidad del aire, como también la contaminación sonora. 
+
+Quieren hacer esto para estudiar la posibilidad de implementar vehículos eléctricos a su flota. 
+
+Debido a que sería una unidad de negocio nueva, quieren hacer un análisis preliminar del movimiento de los
+taxis en la ciudad de Nueva York para obtener un marco de referencia y poder tomar decisiones bien fundamentadas. 
+
+Estamos contratados para acompañar al negocio en este proceso de toma de decisión, para lo cual debemos utilizar
+'datos provistos de mayor calidad encontrados' y cruzarlos con otros datos (como los ofrecidos por viajes compartidos, 
+calidad del aire, contaminación sonora y correlaciones climáticas). 
+
+Nota personal: No me queda claro qué entienden por 'viajes compartidos' y; 
+		si el estudio está limitado a estos 'viajes compartidos'. 
+
+De este contexto entiendo que se deriban dos objetivos principales: 
+
+I.1 Encontrar, si existe, la relación entre el 'transporte de pasajeros con automóviles'* y los siguientes dos factores:
+	a) la calidad del aire
+	b) la contaminación sonora
+
+II.2 Realizar un análisis 'preliminar' del movimiento de los taxis en la ciudad de Nueva York
+
+#########################################################################################################################
+
+* El sector de "transporte de pasajeros con automóviles" se refiere a la industria del transporte que proporciona servicios de 
+transporte de pasajeros utilizando automóviles, como taxis, vehículos de transporte con conductor (TNC) y servicios de limusina. 
+Este sector incluye empresas y conductores que operan en una variedad de modelos de negocio, desde conductores independientes 
+que poseen y operan sus propios vehículos hasta empresas que poseen y administran flotas de vehículos.
+
+El transporte de pasajeros con automóviles es un componente importante del sector de transporte en muchos países, ya que 
+proporciona una forma de transporte conveniente y accesible para las personas que necesitan desplazarse dentro de las ciudades 
+y entre ellas. Sin embargo, también plantea desafíos para la regulación y el control de la calidad de los servicios, 
+especialmente en el caso de los TNC que son relativamente nuevos y han cambiado la forma en que se realiza el transporte 
+de pasajeros en muchos lugares.
+
+#########################################################################################################################
+
+II. REQUISITOS 
+
+1. Cruzar el dataset de taxis con AL MENOS OTROS DOS datasets que el equipo deseé agregar. 
+
+2. Crear base de datos (DataWarehouse) de diferentes fuentes (que corra en local o se aloje en la nube es opcional)
+
+3. La base de datos depurada deberá contemplar POR LO MENOS DOS tipos diferentes de extracción de datos (estáticos, llamadas a API, scrapping, etc.)
+
+4. Reporte con análisis significativo de las líneas de investigación escogidas: 
+	Contemplar relaciones entre variables y concluir si existe o no relación entre estas y, de haberlos, los posibles factores que causan la relación. 
+
+5. Modelo de Machine Learning de clasificación (supervisado o no supervisado):
+	El modelo debe de ser entrenado y puesto en producción. 
+	El modelo debe resolver un problema. 
+	El modelo debe conectar globalmente con los objetivos propuestos en el proyecto. 
+
+
+III. IDEAS DE ANÁLISIS E IMPLEMENTACIÓN
+
+1. Algunas métricas SUGERIDAS son: 
+	Duración de viajes
+	% Rates
+	Viajes inter e intra boroughs
+	Días
+	Días de la semana y semanas con más viajes
+	Distancia de viaje por pasajero
+	Propinas promedio por pasajero
+	% Tipo de pago
+	Borough con mayor/menor cantidad de viajes
+	Viajes entre distinas zonas
+	Relación de cantidad de viajes con contaminación del aire y sonora
+
+2. Mejoramiento de estrategias de marketing: campañas micro-segmentadas. 
+
+3. Mapas interactivos para acompañar los análisis. 
+
+4. Datos adicionales a cruzar: 
+	Servicios de viajes de otras plataformas
+	Condiciones climáticas
+	Contaminación sonora
+	Contaminación del aire
+	Emisión de CO2 y otros gases
+	Análisis poblacional
+	Ubicación de actividad comercial
+
+
+IV. DATASETS Y FUENTES COMPLEMENTARIAS
+
+1. Fuente data de viajes
+	Fuente: NYC Taxi & Limousine Commission
+	Link: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+2. Datos de transporte público
+	Fuente: Google Transit
+	Link: https://developers.google.com/transit?hl=es-419
+
+3. Historical Weather API
+	Fuente: Open-Mateo
+	Link: https://open-meteo.com/en/docs/historical-weather-api
+
+4. API's de las condiciones climáticas
+	Fuente: OpenWeather
+	Link: https://openweathermap.org/api
+
+5. Emisiones de CO2 por país y año
+	Fuente: Kaggle (Autor: BIO)
+	Link: https://www.kaggle.com/datasets/lobosi/c02-emission-by-countrys-grouth-and-population
+
+6. Dataset de los sonidos recolectados en NYC
+	Fuente: Zenodo (Autor: Cartwright Et al.)
+	Link: https://zenodo.org/record/3966543#.ZCiLsnbMLIU
+
+7. Dataset de la calidad del aire de NYC
+	Fuente: NYC OpenData
+	Link: https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r
+
+8. Qué es un Borough 
+	Fuente: Wikipedia
+	Link:  https://en.wikipedia.org/wiki/Boroughs_of_New_York_City
+
+
+IEEE/ANSI 830-1998
+STANDARD FOR SOFTWARE REQUIREMENTS SPECIFICATION
+
+
