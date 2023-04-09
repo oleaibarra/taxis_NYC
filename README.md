@@ -9,10 +9,10 @@ La base para el estudio será la información descargable en el sitio de “NYC 
 
 Para el análisis preliminar del movimiento de taxis en la ciudad de Nueva York se utilizarán los archivos parquet que se pueden descargar por año/mes para cada tipo de servicio: 
 
-•	Yellow Taxi Trip Records 
-•	Green Taxi Trip Records 
-•	For-Hire Vehicle Trip Records 
-•	High Volume For-Hire Vehicle Trip Records 
+•	Yellow Taxi Trip Records   
+•	Green Taxi Trip Records   
+•	For-Hire Vehicle Trip Records   
+•	High Volume For-Hire Vehicle Trip Records   
 
 Estos archivos contienen, entre otros, datos respecto a la fecha y hora de inicio y fin del servicio, distancia recorrida, punto de inicio y fin codificada por zonas definidas por la TLC y que pueden ser consultadas en el archivo:
 
