@@ -1,9 +1,9 @@
 # taxis_NYC
 NYC Taxis Data Science Project 
 
-## Información sobre los movimientos de los taxis en la ciudad de Nueva York
+## Análisis preliminar de calidad de datos
 
-Análisis preliminar de calidad de datos
+### Información sobre los movimientos de los taxis en la ciudad de Nueva York
 
 La base para el estudio será la información descargable en el sitio de “NYC Taxi & Limousine Commission (TLC)”: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
@@ -39,7 +39,7 @@ Los vehículos FOR HIRE que no son de alta demanda (FHV) no cuentan con informac
 
 Hay algunos valores en algunos campos que pudieran ser erroneos pues se presentan como outliers muy marcados. Para más información consultar los notebooks descritos anteriormente. 
 
-## Medición del aire en la ciudad de Nueva York
+### Medición del aire en la ciudad de Nueva York
 
 Un primer acercamiento a la medición de los contaminantes se hizo através del estudio del NYC Open Data 'Air quality' que puede ser consultado en el link: 
 https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r
