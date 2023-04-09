@@ -18,10 +18,16 @@ Estos archivos contienen, entre otros, datos respecto a la fecha y hora de inici
 
 •	Taxi Zone Lookup Table (CSV)
 
-Así como en el siguiente shape file:
+Así como en el siguiente shape file:  
 •	Taxi Zone Shapefile (PARQUET)
 
-Un análisis descriptivo de la información de los FHV-HV para el mes de enero de 2023 se encuentra en el notebook 'VFH_HV_analisis_descriptivo.ipynb' y en formato PDF en 'FHV_HV_analisis_descriptivo.pdf'
+Un análisis descriptivo de la información de los FHV-HV para el mes de enero de 2023 se encuentra en el notebook:
+
+• 'VFH_HV_analisis_descriptivo.ipynb' 
+
+y en formato PDF en:
+
+• 'FHV_HV_analisis_descriptivo.pdf'
 
 La información para los taxis amarillos (yellow) es prácticamente la misma que para los vehículos For Hire con alta demanda (HV), con exepción que para los amarillos existe el campo total_amount que contiene el total que tendrá que ser calculado para los VFH_HV sumando los campos base_passenger_fare, tolls, bcf, sales_tax, congestion_surcharge y tips. 
 
@@ -38,9 +44,16 @@ Hay algunos valores en algunos campos que pudieran ser erroneos pues se presenta
 Un primer acercamiento a la medición de los contaminantes se hizo através del estudio del NYC Open Data 'Air quality' que puede ser consultado en el link: 
 https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r
 
-El estudio no cuenta con información desagregada por día ni hora, por lo que se decidió consultar otras fuentes de información. Se puede consultar el notebook dónde se analizó este dataset: 'air.ipynb' y el documento 'ANÁLISIS DESCRIPTIVO DEL REPORTE DE CALIDAD DEL AIRE.docx' 
+El estudio no cuenta con información desagregada por día ni hora, por lo que se decidió consultar otras fuentes de información. Se puede consultar el notebook dónde se analizó este dataset: 
+
+• 'air.ipynb' 
+
+y el documento:
+
+• 'ANÁLISIS DESCRIPTIVO DEL REPORTE DE CALIDAD DEL AIRE.docx' 
 
 Através del New York State Department of Environmental Conservation • Air Monitoring Website se encontró información sobre mediciones de contaminantes reportados de manera desagregada por día y por hora. El para consultar y descargar reportes es el siguiente: 
+
 http://www.nyaqinow.net/
 
 Para consultar información complementaría sobre la ubicación de las estaciones de medición y su alcance se utilizó información de EPA AirData Quality Monitors. 
@@ -48,6 +61,7 @@ Para consultar información complementaría sobre la ubicación de las estacione
 EPA "Environmental Protection Agency" (Agencia de Protección Ambiental) en inglés. Es una agencia federal de los Estados Unidos encargada de proteger la salud humana y el medio ambiente mediante la regulación de la contaminación del aire, agua y suelo, entre otras funciones.
 
 La información se obtuvo del siguiente link: 
+
 https://epa.maps.arcgis.com/apps/webappviewer/index.html?id=5f239fd3e72f424f98ef3d5def547eb5&extent=-146.2334,13.1913,-46.3896,56.5319
 
 El proceso se explica en: 
@@ -56,6 +70,8 @@ En el notebook 'stations_info.ipynb' se encuentra el proceso que se siguió para
 
 El mismo notebook se encuentra en formato PDF bajo el nombre 'Generación de coordenadas y radios de alcance para contaminantes por estación.pdf'
 
-Para conocer la manera en que se seleccionaron las zonas TLC para las que se buscará relación con el contaminante PM 2.5 contra las mediciones de cada estación de medición, se puede consultar el notebook 'zonas_medicion.ipynb'
+Para conocer la manera en que se seleccionaron las zonas TLC para las que se buscará relación con el contaminante PM 2.5 contra las mediciones de cada estación de medición, se puede consultar el notebook:
+
+• 'zonas_medicion.ipynb'
 
 
