@@ -52,6 +52,7 @@ Vamos a definir dos tipos de objetivos: a) los de nuestro equipo para este proye
       
       ii.	KPI Participación_Zonas = (cantidad de viajes por zonas de la empresa) / (cantidad de viajes por zona totales)
 
+
 2.	
 
   a.	Determinar el tiempo de espera promedio (para los VFH-HV) entre el momento en que se solicitó el servicio y el momento en que se recogió al pasajero; por Borough y por zona TLC. 
@@ -59,6 +60,7 @@ Vamos a definir dos tipos de objetivos: a) los de nuestro equipo para este proye
   b.	Lograr un tiempo de espera promedio de 20 % o menor con respecto al promedio del sector en todos los Boroughs. 
   
       i.	KPI Tiempo_espera = (Tiempo de espera promedio por Borough de la empresa) / (Tiempo de espera promedio por Borough del sector)
+
 
 3.	
 
@@ -68,10 +70,12 @@ Vamos a definir dos tipos de objetivos: a) los de nuestro equipo para este proye
    
       i.	KPI Mayores_ingresos = (cantidad de viajes en Borough de la empresa) / (cantidad de viajes en Borough totales)
       
+
 4.	
 
    a.	Determinar el valor de la relación, si existe, entre la cantidad de viajes que inician y terminan, en el rango de una hora, en las zonas comprendidas en un radio de 2km a la redonda de la ubicación de cada estación de medición para el contaminante PM 2.5 medido por hora. 
    
+
 5.	
 
    a.	Determinar el valor (medido en términos de aumento o disminución de solicitudes de servicios de transportes de pasajeros en vehículos) de la relación, si existe, entre que esté lloviendo y la cantidad de viajes en taxi.  
