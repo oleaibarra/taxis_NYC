@@ -9,6 +9,7 @@
 ### CASO
 
 Se trata de una empresa de servicios de transporte de pasajeros que actualmente se encuentra operando en el sector de micros  de media y larga distancia.
+
 •	La empresa está INTERESADA en invertir en el sector de transporte de pasajeros con automóviles .
 
 •	La empresa QUIERE corroborar la relación entre dicho sector y la calidad del aire, como también la contaminación sonora, para ESTUDIAR la posibilidad de implementar vehículos eléctricos a su flota. 
@@ -42,23 +43,35 @@ El estudio está limitado a las zonas definidas por la “NYC Taxi & Limousine C
 Vamos a definir dos tipos de objetivos: a) los de nuestro equipo para este proyecto y; b) los que la empresa pudiera elaborar a partir de los nuestros. 
 
 1.	
+
   a.	Determinar la cantidad de viajes en taxi originados por Borough y por zona TLC.
-  b.	Tener una participación del 10 % en todos los Boroughs y de al menos 5% en cada zona TLC. 
+  
+  b.	Tener una participación del 10 % en todos los Boroughs y de al menos 5% en cada zona TLC.
+  
       i.	KPI Participación_Boroughs = (cantidad de viajes por Borough de la empresa) / (cantidad de viajes por Borough totales)
+      
       ii.	KPI Participación_Zonas = (cantidad de viajes por zonas de la empresa) / (cantidad de viajes por zona totales)
 
 2.	
+
   a.	Determinar el tiempo de espera promedio (para los VFH-HV) entre el momento en que se solicitó el servicio y el momento en que se recogió al pasajero; por Borough y por zona TLC. 
+  
   b.	Lograr un tiempo de espera promedio de 20 % o menor con respecto al promedio del sector en todos los Boroughs. 
+  
       i.	KPI Tiempo_espera = (Tiempo de espera promedio por Borough de la empresa) / (Tiempo de espera promedio por Borough del sector)
 
 3.	
+
    a.	Determinar los Boroughs y zonas con mayores ingresos ponderados contra el número de viajes originados en dicho Boroughs y zona.
+   
    b.	 Tener una participación del 20 % en el Boroughs con más ingresos ponderados. 
+   
       i.	KPI Mayores_ingresos = (cantidad de viajes en Borough de la empresa) / (cantidad de viajes en Borough totales)
       
 4.	
+
    a.	Determinar el valor de la relación, si existe, entre la cantidad de viajes que inician y terminan, en el rango de una hora, en las zonas comprendidas en un radio de 2km a la redonda de la ubicación de cada estación de medición para el contaminante PM 2.5 medido por hora. 
    
 5.	
+
    a.	Determinar el valor (medido en términos de aumento o disminución de solicitudes de servicios de transportes de pasajeros en vehículos) de la relación, si existe, entre que esté lloviendo y la cantidad de viajes en taxi.  
