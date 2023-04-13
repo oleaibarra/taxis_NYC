@@ -75,7 +75,8 @@ El codigo puede consultarse en lambda_function.py y en funciones.py incluídos e
 ## Creación de la función Lambda en AWS
 
 1. Se crea un Bucket en AWS S3 donde se almacenarán los archivos que se suban. 
-2. En el servicio Lambda de AWS damos a crear nueva función. 
+2. En el servicio Lambda de AWS damos a crear nueva función.
+2.5. Seleccionamos Python 3.7 como lenguaje.
 3. Le damos un nombre a la función y damos a crear. 
 4. Después, en la nueva pantalla, bajamos un poco hasata ver la opción upload from, y seleccionamos upload a .zip file
 5. Después de algo así como un minuto, terminará de cargar y desplegará un mensaje parecido a: 
@@ -87,7 +88,7 @@ The deployment package of your Lambda function "green_load" is too large to enab
 9. En edit creamos las siguientes variables (para nuestro caso específico y código específico): 
 ```
 Key: BUCKET_NAME
-Value: prueba-para-lambda-upload
+Value: nyc-taxis-data
 ```
 ```
 Key: site
@@ -108,7 +109,7 @@ Value: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 ```
 cron(0 0 1 * ? *)
 ```
-21. Ahora vamos a 'general configuration' en el menú vertical (que se despliga al seleccionar 'Configuration' en el menú horizontal). 
+21. Ahora vamos a 'generalconfiguration' en el menú vertical (que se despliga al seleccionar 'Configuration' en el menú horizontal). 
 22. Seleccionamos 'Edit' y en la opción 'timeout' modificamos para darle más tiempo (30 seg en nuestro caso). Y damos 'save'.
 23. Para probar si la función nos regresará lo que queremos, vamos a probarla. 
 24. En el menú horizontal, dos espacios a la izquierda de Configuration, se encuentra Test. Damos click. 
