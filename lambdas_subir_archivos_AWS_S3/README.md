@@ -92,7 +92,7 @@ Value: nyc-taxis-data
 ```
 ```
 Key: site
-Value: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+Value: https://d37ci6vzurychx.cloudfront.net/trip-data
 ```
 9. Damos en 'save' y nos regresa al menú de Configuration. 
 10. En el menú seleccionamos 'Permission'. 
