@@ -24,6 +24,52 @@ En el código, si se produce una excepción durante la descarga, subida o genera
 
 La implicación de esto es que la excepción se manejará adecuadamente en la función Lambda y se registrará para su posterior análisis. En otras palabras, si se produce un error durante la ejecución de la función Lambda, el entorno de ejecución en AWS detectará la excepción y registrará un registro de error, que puede ser utilizado para analizar y solucionar el problema.
 
+### Para cargar este código a una función lambda a AWS se tiene que empaquetar en un archivo .zip de la siguiente manera: 
+
+Estamos trabajando en el editor de pycharm y desde la terminal de powershell navegamos a la carpeta donde están nuestras funciones. 
+
+```
+folder_proyecto/
+|-- lambda_function.py
+|-- funciones.py
+|-- requirements.txt
+```
+Como se observa, hay que crear un archivo requirements.txt que contenga: 
+```
+boto3
+requests
+```
+#### Navegamos al folder del proyecto en la terminal y creamos carpeta package (en este caso lo estamos haciendo desde powershell en pycharm)
+
+```
+mkdir package
+```
+
+#### Instalamos las bibliotecas necesarias en la carpeta package:
+
+```
+pip install -r requirements.txt -t package
+```
+
+#### Copiamos los archivos del proyecto en la carpeta package:
+
+```
+Copy-Item lambda_function.py, funciones.py -Destination package/
+```
+
+#### Comprimimos la carpeta package en un archivo zip:
+
+```
+Set-Location package
+```
+```
+Compress-Archive -Path * -DestinationPath ..\package.zip
+```
+```
+Set-Location ..
+```
+
+
 El codigo puede consultarse en lambda_function.py y en funciones.py incluídos en este repositorio.
 
 ## Creación de la función Lambda en AWS
@@ -75,41 +121,5 @@ cron(0 0 1 * ? *)
 ```
 25. Damos 'save'
 26. Cuando nos diga que se grabó exitosamente, damos 'test'
-```
-folder_proyecto/
-|-- lambda_function.py
-|-- funciones.py
-|-- requirements.txt
-```
-
-### Navegamos al folder del proyecto en la terminal y creamos carpeta package (en este caso lo estamos haciendo desde powershell en pycharm)
-
-```
-mkdir package
-```
-
-### Instalamos las bibliotecas necesarias en la carpeta package:
-
-```
-pip install -r requirements.txt -t package
-```
-
-### Copiamos los archivos del proyecto en la carpeta package:
-
-```
-Copy-Item lambda_function.py, funciones.py -Destination package/
-```
-
-### Comprimimos la carpeta package en un archivo zip:
-
-```
-Set-Location package
-```
-```
-Compress-Archive -Path * -DestinationPath ..\package.zip
-```
-```
-Set-Location ..
-```
 
 
