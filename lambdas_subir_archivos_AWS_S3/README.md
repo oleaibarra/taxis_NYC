@@ -8,7 +8,7 @@
 ```
 folder_proyecto/
 |-- lambda_function.py
-|-- upload_to_aws.py
+|-- funciones.py
 |-- requirements.txt
 ```
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt -t package
 ### Copiamos los archivos del proyecto en la carpeta package:
 
 ```
-Copy-Item lambda_function.py, upload_to_aws.py -Destination package/
+Copy-Item lambda_function.py, funciones.py -Destination package/
 ```
 
 ### Comprimimos la carpeta package en un archivo zip:
