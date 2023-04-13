@@ -2,7 +2,7 @@
 import datetime
 
 # Asigna la URL del origen de datos a la variable SITE.
-SITE = 'https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page'
+SITE = 'https://d37ci6vzurychx.cloudfront.net/trip-data'
 
 # Asigna el nombre de la carpeta de destino en Amazon S3 a la variable S3_FOLDER.
 S3_FOLDER = 'taxi/'
