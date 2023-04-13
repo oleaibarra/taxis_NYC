@@ -42,10 +42,26 @@ Compress-Archive -Path * -DestinationPath ..\package.zip
 Set-Location ..
 ```
 
+### En AWS creamos función lambda
+creamos rol y le asignamos permisos full para s3
+en configuración añadimos variables de entorno: 
+```
+Key: BUCKET_NAME
+Value: prueba-para-lambda-upload
+```
+```
+Key: site
+Value: https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+```
 ### Para correr la prueba de testeo del lambda fuction hubo que modificar el json con: 
 ```
 {
   "time": "2023-04-13T04:42:53.708Z"
 }
 ```
+#### La primera prueba falló por que tenía asignado muy poco tiempo de ejecución. 
 
+En Configuracion; general; se subió el tiempo a 30 seg. y la prueba funcionó. 
+
+Pero... 
+Aunque se creó el objeto en el bucket, el objeto está vacío. Habrá que revisar de nuevo el código. 
