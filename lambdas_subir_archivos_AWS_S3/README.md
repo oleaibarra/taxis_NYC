@@ -34,12 +34,12 @@ folder_proyecto/
 |-- funciones.py
 |-- requirements.txt
 ```
-Como se observa, hay que crear un archivo requirements.txt que contenga: 
+Como se observa, hay que crear previamente un archivo requirements.txt que contenga: 
 ```
 boto3
 requests
 ```
-#### Navegamos al folder del proyecto en la terminal y creamos carpeta package (en este caso lo estamos haciendo desde powershell en pycharm)
+#### En powershell y en el direcotrio del proyecto craemos 'package'
 
 ```
 mkdir package
