@@ -5,7 +5,7 @@ import requests
 from funciones import generate_nyc_tlc_url, generate_object_key
 
 # Constantes para la URL del sitio y la carpeta de destino en S3
-SITE = os.environ.get('site', 'https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page')
+SITE = os.environ.get('site', 'https://d37ci6vzurychx.cloudfront.net/trip-data')
 BUCKET_NAME = os.environ.get('BUCKET_NAME', 'nyc-taxis-data')
 
 def upload_to_aws(download_url, s3_key):
