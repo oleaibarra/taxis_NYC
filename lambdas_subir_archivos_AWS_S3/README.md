@@ -123,4 +123,17 @@ cron(0 0 1 * ? *)
 25. Damos 'save'
 26. Cuando nos diga que se grabó exitosamente, damos 'test'
 
+### Para generar las funciones lambda de carga de los taxis amarillos y los fhvhv se siguió el mismo proceso y se usó el mismo código (tan sólo ajustando la variable 'taxi' a 'yellow' o 'fhvhv' según fuera el caso. 
+
+### para generar la función lambda de carga manual el código se ha modificado y se añade al respositorio. El proceso sólo cambia al agregar más variables de entorno en AWS lambda. A continuación se describen las variables:
+```
+KEY: site
+KEY: green_yellow_fhvhv
+KEY: month_xx
+KEY: year_xxxx
+KEY: BUCKET_NAME
+```
+
+
+
 
