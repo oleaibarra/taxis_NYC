@@ -15,9 +15,7 @@ taxis en la ciudad de Nueva York para obtener un marco de referencia y poder tom
 Estamos contratados para acompañar al negocio en este proceso de toma de decisión, para lo cual debemos utilizar
 'datos provistos de mayor calidad encontrados' y cruzarlos con otros datos (como los ofrecidos por viajes compartidos, 
 calidad del aire, contaminación sonora y correlaciones climáticas). 
-
-Nota personal: No me queda claro qué entienden por 'viajes compartidos' y; 
-		si el estudio está limitado a estos 'viajes compartidos'. 
+ 
 
 De este contexto entiendo que se deriban dos objetivos principales: 
 
