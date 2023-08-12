@@ -78,3 +78,6 @@ Vamos a definir dos tipos de objetivos: a) los de nuestro equipo para este proye
 5.	
 
    a.	Determinar el valor (medido en términos de aumento o disminución de solicitudes de servicios de transportes de pasajeros en vehículos) de la relación, si existe, entre que esté lloviendo y la cantidad de viajes en taxi.  
+
+### Observaciones
+El proyecto se planteó de inicio elaborar el datawarehouse en AWS, de ahí las funciones lambdas que se construyeron, pero finalmente se optó por mover el proyecto a Google Cloud Platform, donde se diseñó el datawarehouse en BigQuery y se construyeron los dashbords para presentar los hallazgos en Looker. 
