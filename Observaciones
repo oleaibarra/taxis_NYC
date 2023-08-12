@@ -1,0 +1,1 @@
+El proyecto se planteó de inicio elaborar el datawarehouse en AWS, de ahí las funciones lambdas que se construyeron, pero finalmente se optó por mover el proyecto a Google Cloud Platform, donde se diseñó el datawarehouse en BigQuery y se construyeron los dashbords para presentar los hallazgos en Looker. 
